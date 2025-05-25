@@ -95,7 +95,7 @@ def zip_reports(zip_filename="raport_mongodb.zip"):
 
 if __name__ == "__main__":
     print("🔄 Start testu MongoDB...")
-    mongo_uri = os.getenv("MONGO_URI")
+    mongo_uri = os.getenv("MONGO_URI") or "mongodb+srv://admin:admin@cluster0.tmhpxbi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     if not mongo_uri:
         log_result("ENV", "FAIL", "Brak zmiennej środowiskowej MONGO_URI")
         exit(1)

@@ -11,7 +11,7 @@ doc = {
 }
 
 
-MONGO_URI = os.getenv("MONGO_URI") or "mongodb+srv://admin:<db_password>@cluster0.tmhpxbi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = os.getenv("MONGO_URI") or "mongodb+srv://admin:admin@cluster0.tmhpxbi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 # ----------------------
